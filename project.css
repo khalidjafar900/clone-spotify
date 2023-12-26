@@ -1,0 +1,369 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+   
+}
+.sidebar{
+    background-color: black;
+    
+   width: 22rem;
+   border-radius: 1rem 1rem;
+
+}
+.menu{
+    background-color:#121212 ;
+    flex:1;
+    border-radius: 1rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    overflow: auto;
+    margin-top: 1rem;
+    
+
+}
+.playbar {
+    background-color: black; 
+    position:fixed;
+    bottom:0px;
+    height:72px;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.sidebar .nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    padding:1.25rem 1.25rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    z-index:10;
+   
+}
+.sidebar .nav .nav-option{
+    opacity: 0.5;
+    margin: 0.8rem;}
+    .sidebar .nav .nav-option a{
+        padding-left: 1rem;
+        text-decoration: none;
+        color: white; 
+       
+    }
+    
+.sidebar .nav-option:hover{
+    opacity: 1;
+    }
+/*librarty*/
+.library{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+.library-opt img {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+    opacity: 0.5;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.library-opt a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    opacity: 0.5;
+    
+}
+.icons i{
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}.icons i:hover{
+    opacity: 1;
+}
+.library-opt a:hover{
+    opacity: 1;
+
+}
+.library-opt img:hover{
+    opacity: 1;
+}
+.box1{
+    background-color: #232323;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    
+}
+.box2{
+    background-color: #232323;
+    padding: 1rem;
+    margin: 0.5rem;
+     border-radius: 1rem;
+    
+    
+}
+.p1{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+.p2{
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+.badge{
+    border-radius: 2rem;
+    font-weight: 700;
+    padding: 0.3rem;
+    height: 2rem;
+    border: none;
+    width: fit-content;
+}
+/*sticky nav*/
+.sticky-nav{
+    position: sticky;
+    top: 0px;
+    background-color:#121212;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 10;
+    
+    
+}
+.st,.st2{
+    display: flex;
+    }
+    .a1,.a2{
+        border-radius: 50%;
+        background-color: black;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+.a2 i{
+    padding-left: 1rem;
+     font-size: 1.5rem;
+
+}
+.a1 i{
+    padding-left: 1rem;
+     font-size: 1.5rem;
+}
+.sticky-nav .badge{
+    padding:0rem 1rem 0rem 1rem;
+    margin-right: 1.5rem;
+}
+.sign-bt{
+margin-right: 1rem;
+ font-size: 1.5rem;
+ border-radius: 50%;
+ background-color: black;
+ padding: 0.2rem;
+}
+@media (max-width:1000px){
+    .a2{
+        display: none;
+    }
+    #st2{
+        display:none;
+    }
+}
+#st{
+    background-color: black;
+    color: white;
+}
+#st2:hover{
+    opacity: 0.5;
+}
+/*main menu*/
+.card{
+    width: 150px;
+    border-radius: 1rem;
+background-color: #080808;
+padding: 1rem;
+margin-left: 1rem;
+margin-top: 1rem;
+
+}
+.card:hover{
+    background-color: #232323;
+}
+.card-img{
+    width: 100%;
+    border-radius: 1rem ;
+}
+.card-title{
+    font-weight: 500;
+
+}
+.card-info{
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.foother{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 30%;
+    width: 90%;
+    border-top: 2px solid white;
+    opacity: 0.7;
+}/*playbar*/
+.playbar{
+    display: flex;
+}
+.player-con1 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-con1 img{
+    height: 50px;
+    width: 50px;
+    margin-left: 1rem;
+}
+.para{
+    margin-left: 1rem;
+}
+.pa1{
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 700;
+    
+opacity: 0.5;
+}
+.pa2{
+    font-size: 0.7rem;
+    margin-top: 0.1rem;
+    opacity: 0.5;
+}
+.player-con1 i{
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    color: white;
+opacity: 0.5;
+}
+#pic{
+    height: 1.1rem;
+    width: 1.1rem;
+    opacity: 0.5;
+    
+}
+.player-con1 i:hover,.pa1:hover,.pa2:hover,#pic:hover{
+    opacity: 1;
+}
+.player-con2{
+    width: 50%;
+    
+}
+.player-control-icon{
+    height:0.9rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    opacity: 0.5;
+}
+.control-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.control-rang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.range{
+    appearance: none;
+    cursor: pointer;
+    width: 70%;
+}
+.range::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: #dddd;
+    border-radius:100px;
+
+}
+.range::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+.ct{
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+
+}
+.tt{
+    font-size: 0.8rem;
+    margin-left: 0.4rem;
+}
+.player-con3{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.player-con3 i{
+    font-size: 1rem;
+    margin-right: 1rem;
+    opacity: 0.5;
+}
+.player-con3 i:hover{opacity: 1;}
+.player-con3 input[type]{
+    appearance: none;
+    cursor: pointer;
+}
+.player-con3 input[type]::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: #dddd;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.player-con3 input[type]::-webkit-slider-runnable-track:hover{
+    opacity: 1;
+}
+.player-con3 input[type]::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #121212;
+    border-radius: 50%;
+    margin-top: -2px;
+
+}
